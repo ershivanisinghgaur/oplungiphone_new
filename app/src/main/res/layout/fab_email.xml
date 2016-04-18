@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.melnykov.fab.FloatingActionButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|right"
+    android:layout_margin="@dimen/global_keyline_s"
+    android:elevation="@dimen/elevation_fab"
+    android:src="@drawable/quick_contacts_mail_white_24x24"
+    app:fab_colorNormal="#09c"
+    app:fab_colorPressed="#1976D2"
+    app:fab_colorRipple="@color/global_color_control_highlight"
+    app:fab_shadow="true" />

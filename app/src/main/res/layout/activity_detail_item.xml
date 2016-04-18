@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.firerox.oplungiphone.view.ObservableStickyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    app:stuckShadowDrawable="@drawable/shape_shadow"
+    app:stuckShadowHeight="@dimen/toolbar_shadow_height">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_content"
+        android:orientation="vertical">
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/toolbar_image_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_image_expanded_height"
+                android:layout_gravity="bottom"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_image_expanded_height"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/toolbar_image_panel_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/toolbar_image_gap_height" />
+
+                <FrameLayout
+                    android:id="@+id/toolbar_image_panel_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/toolbar_image_collapsed_height"
+                    android:tag="sticky-hastransparancy-nonconstant">
+
+                    <TextView
+                        android:id="@+id/toolbar_image_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="@dimen/global_spacing_xs"
+                        android:layout_marginLeft="@dimen/toolbar_image_title_margin_left"
+                        android:layout_marginRight="@dimen/global_spacing_xs"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:paddingBottom="@dimen/global_spacing_xs"
+                        android:paddingRight="@dimen/toolbar_image_title_padding_right"
+                        android:shadowColor="@android:color/black"
+                        android:shadowRadius="16"
+                        android:textAppearance="@style/TextAppearance.Worcipe.Title.Inverse" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_shadow_height"
+            android:background="@drawable/shape_shadow" />
+
+        <include
+            layout="@layout/activity_detail_content_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/fragment_worcipe_detail_card_margin_vertical"
+            android:layout_marginLeft="@dimen/fragment_worcipe_detail_card_margin_horizontal_first"
+            android:layout_marginRight="@dimen/fragment_worcipe_detail_card_margin_horizontal_last"
+            android:layout_marginTop="@dimen/fragment_worcipe_detail_card_margin_vertical_first" />
+
+        <!--<include
+            layout="@layout/admob_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fragment_worcipe_detail_card_margin_vertical"
+            android:layout_marginLeft="@dimen/fragment_worcipe_detail_card_margin_horizontal_first"
+            android:layout_marginRight="@dimen/fragment_worcipe_detail_card_margin_horizontal_last"
+            android:layout_marginTop="@dimen/fragment_worcipe_detail_card_margin_vertical" />-->
+
+        <include
+            layout="@layout/activity_detail_content_full"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/fragment_worcipe_detail_card_margin_vertical"
+            android:layout_marginLeft="@dimen/fragment_worcipe_detail_card_margin_horizontal_first"
+            android:layout_marginRight="@dimen/fragment_worcipe_detail_card_margin_horizontal_last"
+            android:layout_marginTop="@dimen/fragment_worcipe_detail_card_margin_vertical_first" />
+
+    </LinearLayout>
+
+</com.firerox.oplungiphone.view.ObservableStickyScrollView>

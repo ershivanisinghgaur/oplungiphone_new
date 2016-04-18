@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Phương Bắc Phụ Kiện</string>
+    <string name="app_version">1.0</string>
+    <string name="app_year">2016</string>
+    <string name="app_copyright">Nguyễn Quốc Trung</string>
+    //admob
+    <string name="banner_ad_unit_id">ca-app-pub-1490401564391885/7874343259</string>
+    <string name="banner_ad_fullsrceen">ca-app-pub-1490401564391885/7073764455</string>
+
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_favorite">Sản phẩm yêu thích</string>
+    <string name="title_activity_cart">Giỏ hàng của bạn</string>
+    <string name="title_activity_payment">Thanh toán</string>
+    <string name="title_activity_contact">Liên hệ</string>
+    <string name="title_activity_rate">Đáng giá ứng dụng</string>
+    <string name="title_activity_sms">Đóng góp ý kiến</string>
+    <string name="title_activity_app">Ứng dụng nổi bật khác</string>
+    <string name="title_activity_call">Hỗ trợ trực tuyến</string>
+    <string name="title_activity_news">Tin tức</string>
+    <string name="title_activity_settings">Thoát ứng dụng</string>
+
+    <!-- Drawer Items -->
+    <string name="drawer_item_home">Trang chủ</string>
+    <string name="drawer_item_section_header">Section Header</string>
+    <string name="drawer_item_settings">Cài đặt</string>
+    <string name="drawer_item_favorites">Sản phẩm yêu thích</string>
+    <string name="drawer_item_cart">Giỏ hàng của bạn</string>
+
+    <string name="action_search">Tìm kiếm</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_settings">Cài đặt</string>
+    <string name="action_share">Chia sẻ</string>
+    <string name="action_favorite">Yêu thích</string>
+    <string name="recipes">Sản phẩm</string>
+    <string name="favorites">Yêu thích</string>
+
+    //Dialog Exit
+    <string name="confirm_exit">Are you sure you want to exit?</string>
+    <string name="positive">Yes</string>
+    <string name="negative">No</string>
+
+    //Dialog Loading
+    <string name="progress_title">Loading</string>
+    <string name="progress_content">Please wait</string>
+
+    //Snack bar - No internet
+    <string name="nonet1">No internet connection!</string>
+
+    <string name="activity_detail_product_info">Thông tin sản phẩm</string>
+    <string name="activity_detail_product_detail">Chi tiết sản phẩm</string>
+    <string name="activity_detail_product_buy">Mua hàng</string>
+
+
+</resources>

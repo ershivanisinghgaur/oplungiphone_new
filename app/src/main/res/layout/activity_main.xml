@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/fragment_worcipe_main"
+        android:name="com.firerox.oplungiphone.fragment.MainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        tools:layout="@layout/fragment_product_category_main" />
+
+
+    <include layout="@layout/toolbar" />
+    <include layout="@layout/admob_banner" />
+    <include layout="@layout/fab_email" />
+
+
+
+</FrameLayout>

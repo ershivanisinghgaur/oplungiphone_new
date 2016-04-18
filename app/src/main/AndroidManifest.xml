@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.firerox.oplungiphone"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".SettingApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo_app"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Worcipe.Blue">
+        <activity
+            android:name="com.firerox.oplungiphone.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Worcipe.TransparentStatusBar.Blue">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.firerox.oplungiphone.activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Worcipe.TransparentStatusBar.Blue"></activity>
+        <activity
+            android:name=".activity.ProductDetailActivity"
+            android:label="@string/title_activity_base"
+            android:parentActivityName="com.firerox.oplungiphone.activity.MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.ProductListActivity"
+            android:label="@string/title_activity_base"
+            android:parentActivityName="com.firerox.oplungiphone.activity.MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.FavoriteActivity"
+            android:label="@string/title_activity_favorite"
+            android:parentActivityName="com.firerox.oplungiphone.activity.MainActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.PaymentActivity"
+            android:label="@string/title_activity_payment"
+            android:parentActivityName="com.firerox.oplungiphone.activity.MainActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.CartActivity"
+            android:label="@string/title_activity_cart"
+            android:parentActivityName="com.firerox.oplungiphone.activity.MainActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.analytics.globalConfigResource"
+            android:resource="@xml/analytics_global_tracker" />
+    </application>
+
+</manifest>
